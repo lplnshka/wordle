@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url('imgs/fon.gif');
+  background-color: rgb(105, 150, 206, 0.2);
+}
+
+/* заголовок страницы */
+h1 {
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  color: #142643;
+}
+.volna {
+  
+  width: 100%;
+  height: 300px;
+}
+/* стиль для всей доски */
+#game-board {
+  /* делаем выравнивание всех элементов по центру */
+  display: flex;
+  align-items: center;
+  /* добавляем выравнивание по вертикали */
+  flex-direction: column;
+}
+
+/* стиль для строки */
+.letter-row {
+  /* каждая клетка пусть будет в своём отдельном контейнере */
+  display: flex;
+}
+
+/* стиль для клетки */
+.letter-box {
+  color: #d0e0fb;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  /* рисуем границу */
+  border: 2px solid #1d3049;
+  border-radius: 3px;
+  /* добавляем отступы */
+  margin: 2px;
+  /* размер шрифта */
+  font-size: 2.5rem;
+  /* высота и ширина клетки */
+  height: 5rem;
+  width: 5rem;
+  /* выравниваем содержимое по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* делаем все буквы большими */
+  text-transform: uppercase;
+  background-color: rgba(13, 53, 101, 0.89);
+}
+
+/* добавляем жирную обводку у заполненных клеток */
+.filled-box {
+  border: 3px solid #142643;
+}
+
